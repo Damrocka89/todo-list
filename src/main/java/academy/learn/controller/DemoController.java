@@ -30,8 +30,9 @@ public class DemoController {
 
     //http://localhost:8080/todolist/welcome?user=Ewa
     @GetMapping("welcome")
-    public String welcome(@RequestParam String user, Model model) {
+    public String welcome(@RequestParam String user, @RequestParam int age, Model model) {
         model.addAttribute("helloMessage", demoService.getHelloMessage(user));
+        model.addAttribute("age", age);
         log.info("model = {}", model);
         return "welcome";
     }
