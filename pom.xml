@@ -16,6 +16,7 @@
         <java.version>11</java.version>
         <lombok.version>1.18.8</lombok.version>
         <servlet-api.version>3.1.0</servlet-api.version>
+        <jstl.version>1.2</jstl.version>
     </properties>
 
         <dependencies>
@@ -47,6 +48,11 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl.version}</version>
             </dependency>
 
         </dependencies>
